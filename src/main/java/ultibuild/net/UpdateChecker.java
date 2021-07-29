@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 
 public class UpdateChecker {
-    private static String ver = "1.0";
+    private static String ver = "1.1";
 
     public static void checkForUpdates() {
         if(getLatestVersion() != "") {
