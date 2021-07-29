@@ -1,0 +1,8 @@
+name: ItemGui
+version: v1.0
+main: ultibuild.net.ItemGui
+api-version: 1.16
+
+commands:
+  itemgui:
+    description: item commands
