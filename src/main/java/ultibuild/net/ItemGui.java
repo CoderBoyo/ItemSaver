@@ -19,6 +19,7 @@ public final class ItemGui extends JavaPlugin implements Listener {
         this.getCommand("itemgui").setExecutor(new command());
         getServer().getPluginManager().registerEvents(new ClickEvent(), this);
         this.getLogger().log(Level.INFO,"Successfully started ItemGUI");
+        UpdateChecker.checkForUpdates();
     }
 
     @Override
