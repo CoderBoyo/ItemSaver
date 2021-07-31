@@ -7,10 +7,10 @@ import java.util.Scanner;
 import java.util.logging.Level;
 
 public class UpdateChecker {
-    private static String ver = "1.1";
+    private static String ver = "1.2";
 
     public static void checkForUpdates() {
-        if(getLatestVersion() != "") {
+        if(!Objects.equals(getLatestVersion(), "")) {
             if(!Objects.equals(ver, getLatestVersion())) {
                 ItemGui.getInstance().getLogger().log(Level.INFO,"A new version is avalible!");
                 ItemGui.getInstance().getLogger().log(Level.INFO,"Your version: " + ver + " Newest: " + getLatestVersion());

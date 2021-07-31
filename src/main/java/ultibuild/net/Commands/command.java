@@ -32,7 +32,8 @@ public class command implements CommandExecutor {
                             }
                             p.openInventory(inv);
                         } else {
-                            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cThere have been no saved items! Save an item first!"));
+                            Inventory inv = Bukkit.createInventory(null, 54, "ItemGUI");
+                            p.openInventory(inv);
                         }
                     } else {
                         p.sendMessage(ChatColor.translateAlternateColorCodes('&',"&cSorry you don't have permission for that!"));
