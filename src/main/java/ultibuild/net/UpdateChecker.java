@@ -1,5 +1,8 @@
 package ultibuild.net;
 
+import org.bukkit.Rotation;
+import org.bukkit.block.BlockFace;
+
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Objects;
